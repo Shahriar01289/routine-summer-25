@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Section C Routine - Summer 25</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1a237e;
+      margin-bottom: 30px;
+      font-weight: 700;
+      font-size: 2em;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    caption {
+      caption-side: top;
+      font-size: 1.4em;
+      padding: 15px;
+      font-weight: 700;
+      background-color: #1a237e;
+      color: white;
+    }
+
+    th, td {
+      padding: 14px 16px;
+      text-align: center;
+      border-bottom: 1px solid #e0e0e0;
+      font-weight: 600;
+    }
+
+    th {
+      background-color: #3f51b5;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    td {
+      font-size: 0.95em;
+    }
+
+    td br {
+      display: block;
+      margin: 4px 0;
+    }
+
+    td:first-child {
+      background-color: #e8eaf6;
+      color: #1a237e;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    td:not(:first-child):not(:empty) {
+      color: #263238;
+    }
+
+    td:not(:first-child):not(:empty)::first-line {
+      font-weight: 700;
+      color: #1a237e;
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+      }
+
+      thead tr {
+        display: none;
+      }
+
+      tr {
+        margin-bottom: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        overflow: hidden;
+        text-align: center;
+      }
+
+      td {
+        text-align: center;
+        padding: 12px 15px;
+        border-bottom: 1px solid #e0e0e0;
+        position: relative;
+      }
+
+      td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #3f51b5;
+        display: block;
+        margin-bottom: 6px;
+      }
+
+      td:first-child {
+        background: #e8eaf6;
+        color: #1a237e;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-radius: 10px 10px 0 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<h1>Section C Class Routine</h1>
+
+<table>
+  <caption>Summer 2025</caption>
+  <thead>
+    <tr>
+      <th>Day</th>
+      <th>9:00–10:25</th>
+      <th>10:25–11:50</th>
+      <th>11:50–1:15</th>
+      <th>1:55–3:20</th>
+      <th>3:20–4:45</th>
+      <th>4:45–6:10</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="Day">Sunday</td>
+      <td data-label="9:00–10:25">CSE-1100<br>[SY, TAN]<br>(BCL)</td>
+      <td data-label="10:25–11:50">PHY-1151<br>[SHR]<br>(509)</td>
+      <td data-label="11:50–1:15"></td>
+      <td data-label="1:55–3:20"></td>
+      <td data-label="3:20–4:45"></td>
+      <td data-label="4:45–6:10"></td>
+    </tr>
+    <tr>
+      <td data-label="Day">Monday</td>
+      <td data-label="9:00–10:25">EEE-1132<br>[AF, NIS]<br>(EEL)</td>
+      <td data-label="10:25–11:50">MAT-1141<br>[AKS]<br>(814)</td>
+      <td data-label="11:50–1:15">PHY-1151<br>[SHR]<br>(814)</td>
+      <td data-label="1:55–3:20"></td>
+      <td data-label="3:20–4:45"></td>
+      <td data-label="4:45–6:10"></td>
+    </tr>
+    <tr>
+      <td data-label="Day">Tuesday</td>
+      <td data-label="9:00–10:25">PHY-1152<br>[SHR, SJR]<br>(DSAL)</td>
+      <td data-label="10:25–11:50">MAT-1141<br>[AKS]<br>(408)</td>
+      <td data-label="11:50–1:15">EEE-1131<br>[NIS]<br>(408)</td>
+      <td data-label="1:55–3:20"></td>
+      <td data-label="3:20–4:45"></td>
+      <td data-label="4:45–6:10"></td>
+    </tr>
+    <tr>
+      <td data-label="Day">Wednesday</td>
+      <td data-label="9:00–10:25">ENG-0002<br>[NND]<br>(513)</td>
+      <td data-label="10:25–11:50">CHE-1161<br>[MMI]<br>(513)</td>
+      <td data-label="11:50–1:15"></td>
+      <td data-label="1:55–3:20"></td>
+      <td data-label="3:20–4:45"></td>
+      <td data-label="4:45–6:10"></td>
+    </tr>
+    <tr>
+      <td data-label="Day">Thursday</td>
+      <td data-label="9:00–10:25">EEE-1131<br>[NIS]<br>(513)</td>
+      <td data-label="10:25–11:50">ENG-0002<br>[NND]<br>(513)</td>
+      <td data-label="11:50–1:15">CHE-1161<br>[MMI]<br>(513)</td>
+      <td data-label="1:55–3:20"></td>
+      <td data-label="3:20–4:45"></td>
+      <td data-label="4:45–6:10"></td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
